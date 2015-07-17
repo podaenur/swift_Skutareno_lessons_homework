@@ -1,5 +1,52 @@
 // Playground - noun: a place where people can play
 
+//MARK: Lesson
+
+/*
+//server request
+is it Saturday
+true / false / nil
+*/
+
+var apples : Int? = 5
+
+//apples = nil
+
+if apples == nil {
+  println("nil apples")
+} else {
+  println(apples)
+  let a = apples! + 2   //  force unwrapping
+}
+
+if var number = apples {    //    optional binding
+  number += 2
+} else {
+  println("nil apples")
+}
+
+let age = "60"
+
+if age.toInt() != nil {
+  let ageNumber = age.toInt()!
+}
+
+if let ageNumber = age.toInt() {
+  ageNumber
+}
+
+var tomatos: Int! = nil
+tomatos = 2
+
+assert(tomatos != nil, "Oh, no!!!")
+
+tomatos! += 5
+
+tomatos = tomatos + 5
+
+
+//MARK: Homework
+
 /*
 Домашнее задание:
 
@@ -44,36 +91,56 @@ if let tmp = fifth.toInt() {
 println("summ: \(summ)")
 
 
-var response = (statusCode: Int(), message: String?(), errorMessage: String?())
+var response: (statusCode: Int, message: String?, errorMessage: String?)
 
 response = (401, nil, "deny")
 
 if (response.statusCode >= 200 && response.statusCode <= 300) {
-  if let msg = response.message {
-    println("message: \(msg)")
-  }
+  println("Message: \(response.message!)")
 } else {
-  if let msg = response.errorMessage {
+  println("Error: \(response.errorMessage!)")
+}
+
+var shortResponse: (String?, String?) = (response.message, response.errorMessage)
+  if let msg = shortResponse.0 {
+    println("message: \(msg)")
+} else {
+  if let msg = shortResponse.1 {
     println("error: \(msg)")
   }
 }
+  
+//var newFirst = (name: String(), number: String?(), score: Double?())
+//var newSecond = (name: String(), number: String?(), score: Double?())
+//var newThird = (name: String(), number: String?(), score: Double?())
+//var newFourth = (name: String(), number: String?(), score: Double?())
+//var newFifth = (name: String(), number: String?(), score: Double?())
 
-var newFirst = (name: String(), number: String?(), score: Double?())
-var newSecond = (name: String(), number: String?(), score: Double?())
-var newThird = (name: String(), number: String?(), score: Double?())
-var newFourth = (name: String(), number: String?(), score: Double?())
-var newFifth = (name: String(), number: String?(), score: Double?())
-
+var newFirst: (name: String, number: String?, score: Double?)
+var newSecond: (name: String, number: String?, score: Double?)
+var newThird: (name: String, number: String?, score: Double?)
+var newFourth: (name: String, number: String?, score: Double?)
+var newFifth: (name: String, number: String?, score: Double?)
+  
 newFifth = ("Ivan", nil, 5.3)
 newSecond = ("Tolyan", "a987oa", 2.1)
 newThird = ("Margarin", nil, nil)
 newFourth = ("Lui", "d3212er", 0.1)
 newFifth = ("Landish", nil, 4)
 
-let allInfo = [newFirst, newSecond, newThird, newFourth, newFifth]
+var allInfo = [ newFirst, newSecond, newThird, newFourth, newFifth ]
 
 for obj in allInfo {
   println("name: \(obj.name)")
-  if let num = obj.number { println("number: \(num)") } else { println("beggar") }
-  if let scr = obj.score { println("score: \(scr)") } else { println("loggerhead") }
+  if let num = obj.number {
+    println("number: \(num)")
+  } else {
+    println("beggar")
+  }
+  
+  if let scr = obj.score {
+    println("score: \(scr)")
+  } else {
+    println("loggerhead")
+  }
 }

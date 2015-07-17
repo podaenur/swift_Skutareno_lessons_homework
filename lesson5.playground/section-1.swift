@@ -94,7 +94,7 @@ default: tmp = 0
 }
 
 if tmp > 0 && tmp < 9 && horizontalPosition > 0 && horizontalPosition < 9 {
-  let str = (horizontalPosition + tmp)%2 > 0 ? "white" : "black"
+  let str = (horizontalPosition + tmp) % 2 > 0 ? "white" : "black"
   println("Cell color is: \(str)")
 } else {
   println("Wrong initial data")
