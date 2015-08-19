@@ -19,4 +19,16 @@
    <FileRef
       location = "group:lesson6.playground">
    </FileRef>
+   <FileRef
+      location = "group:lesson11.playground">
+   </FileRef>
+   <FileRef
+      location = "group:lesson13.playground">
+   </FileRef>
+   <FileRef
+      location = "group:lesson14.playground">
+   </FileRef>
+   <FileRef
+      location = "group:lesson15.playground">
+   </FileRef>
 </Workspace>
