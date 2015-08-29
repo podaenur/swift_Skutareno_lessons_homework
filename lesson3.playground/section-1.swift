@@ -1,6 +1,8 @@
 // Playground - noun: a place where people can play
 
-//MARK: Lesson
+import UIKit
+
+//MARK: Lesson - Тюплы
 
 let simpleTuple : (Int, String, Bool, Double) = (1, "Hello", true, 2.4)
 let simpleTuple1 = (1, "Hello", true, 2.4)
@@ -53,7 +55,7 @@ println("\(totalNumber) \(merchantName)")
 println((totalNumber, merchantName))
 println(simpleTuple)
 
-//MARK: Homework
+//MARK: Homework )done, refactored)
 
 /*
 Домашнее задание:
@@ -70,8 +72,6 @@ println(simpleTuple)
 
 4. Создайте третий тюпл с теми же параметрами, но значения это разница между соответствующими значениями первого и второго тюплов Результат выведите в консоль
 */
-
-import UIKit
 
 var train = (push: 32, pull: 412, sit: 13)
 var (anotherPush, anotherPull, anotherSits) = (144, 214, 109)

@@ -1,5 +1,12 @@
 // Playground - noun: a place where people can play
 
+import UIKit
+
+// MARK: Lesson - Работа с базовыми типами
+
+
+// MARK: Homework (done, refactored)
+
 /*
 Домашнее задание:
 
@@ -7,8 +14,6 @@
 2. Создайте 3 константы с типами Int, Float и Double Создайте другие 3 константы, тех же типов: Int, Float и Double, при чем каждая из них это сумма первых трех, но со своим типом
 3. Сравните Int результат суммы с Double и выведите отчет в консоль
 */
-
-import UIKit
 
 println("Int min = \(Int.min)")
 println("Int max = \(Int.max)")

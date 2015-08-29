@@ -1,6 +1,8 @@
 // Playground - noun: a place where people can play
 
-//MARK: Lesson
+import UIKit
+
+//MARK: Lesson - Опциональные типы (done)
 
 /*
 //server request
@@ -64,8 +66,6 @@ tomatos = tomatos + 5
 - если да, то какая оценка
 */
 
-import UIKit
-
 let first = "1"
 let second = "2"
 let third = "3third"
@@ -122,7 +122,7 @@ var newThird: (name: String, number: String?, score: Double?)
 var newFourth: (name: String, number: String?, score: Double?)
 var newFifth: (name: String, number: String?, score: Double?)
   
-newFifth = ("Ivan", nil, 5.3)
+newFirst = ("Ivan", nil, 5.3)
 newSecond = ("Tolyan", "a987oa", 2.1)
 newThird = ("Margarin", nil, nil)
 newFourth = ("Lui", "d3212er", 0.1)

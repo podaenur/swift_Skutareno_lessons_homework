@@ -2,7 +2,7 @@
 
 import UIKit
 
-// MARK: Lesson
+// MARK: Lesson - Клоужеры
 
 let numbers = [4, 3, 12, 7, 6, 3, 56, 7, 8, 9, 10, 4, 3, 1, 8, 11]
 

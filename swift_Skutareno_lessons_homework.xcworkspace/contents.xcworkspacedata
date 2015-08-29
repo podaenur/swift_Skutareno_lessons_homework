@@ -23,6 +23,9 @@
       location = "group:lesson11.playground">
    </FileRef>
    <FileRef
+      location = "group:lesson12.playground">
+   </FileRef>
+   <FileRef
       location = "group:lesson13.playground">
    </FileRef>
    <FileRef
@@ -30,5 +33,17 @@
    </FileRef>
    <FileRef
       location = "group:lesson15.playground">
+   </FileRef>
+   <FileRef
+      location = "group:lesson16.playground">
+   </FileRef>
+   <FileRef
+      location = "group:lesson17.playground">
+   </FileRef>
+   <FileRef
+      location = "group:lesson18.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Lesson25.playground">
    </FileRef>
 </Workspace>
