@@ -55,7 +55,7 @@ println("\(totalNumber) \(merchantName)")
 println((totalNumber, merchantName))
 println(simpleTuple)
 
-//MARK: Homework )done, refactored)
+//MARK: Homework (done, refactored)
 
 /*
 Домашнее задание:

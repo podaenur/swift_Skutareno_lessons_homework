@@ -52,7 +52,7 @@ let funString = "what is this? -> \(fun)"
 
 funString
 
-countElements(funString)
+count(funString)  //  countElements was int earler version
 (funString as NSString).length
 
 if funString == "aa" {
@@ -76,13 +76,14 @@ funString.hasSuffix("ъ\u{20dd}\u{301}")
 
 но в первом случае используйте интерполяцию строк, а во втором конкатенацию
 
-2. Поиграйтесь с юникодом и создайте строку из 5 самых классных по вашему мнению символов, 
+2. Поиграйтесь с юникодом и создайте строку из 5 самых классных по вашему мнению символов,
 можно использовать составные символы. Посчитайте длину строки методом SWIFT и Obj-C
 
-3. Создайте строку английский алфавит, все буквы малые от a до z 
+3. Создайте строку английский алфавит, все буквы малые от a до z
 задайте константу - один из символов этого алфавита
 Используя цикл for определите под каким индексов в строке находится этот символ
 */
+
 
 let strA = "5"
 let strB = "2a"
@@ -92,13 +93,81 @@ let strE = "olo"
 
 let summ = (strA.toInt() ?? 0) + (strB.toInt() ?? 0) + (strC.toInt() ?? 0) + (strD.toInt() ?? 0) + (strE.toInt() ?? 0)
 
-var result = ""
+var element1: String
+if strA.toInt() != nil {
+  element1 = strA
+  //  element1 = str.description
+} else {
+  element1 = "nil"
+}
+
+var element2: String
+if strB.toInt() != nil {
+  element2 = strB
+} else {
+  element2 = "nil"
+}
+
+var element3: String
+if strC.toInt() != nil {
+  element3 = strC
+} else {
+  element3 = "nil"
+}
+
+var element4: String
+if strD.toInt() != nil {
+  element4 = strD
+} else {
+  element4 = "nil"
+}
+
+var element5: String
+if strE.toInt() != nil {
+  element5 = strE
+} else {
+  element5 = "nil"
+}
+
+element1
+element2
+element3
+element4
+element5
+
+//  интерполяция "\(...)"
+let result1 = "\(element1) + \(element2) + \(element3) + \(element4) + \(element5) = \(String(summ))"
+//  конкатенация "..." + "..."
+let result2 = element1 + " + " + element2 + " + " + element3 + " + " + element4 + " + " + element5 + " = " + String(summ)
+
+result1
+result2
 
 
+let magicString = "\u{105} \u{30f} \u{205} \u{305} \u{405}\u{30f} \u{30f}"
+magicString
+
+count(magicString)
+(magicString as NSString).length
+NSString(string: magicString).length  //  like String
+NSString(string: magicString).length  //  like NSString
 
 
+let alphabet = "abcdefghijklmnopqrstuvwxyz"
+count(alphabet)
 
+let symbol = "g"
+var foundedIndex: Int?
 
+for index in indices(alphabet) {
+  if String(alphabet[index]) == symbol {
+    var tmp = "\(index)"
+    foundedIndex = tmp.toInt()
+  }
+}
 
-
-
+if foundedIndex != nil {
+  println("source symbol at index \(foundedIndex!)")
+} else {
+  println("source symbol didn't found")
+}
