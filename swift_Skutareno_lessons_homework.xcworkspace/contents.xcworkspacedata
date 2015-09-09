@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:lesson10.playground">
-   </FileRef>
-   <FileRef
       location = "group:lesson1.playground">
    </FileRef>
    <FileRef
@@ -21,6 +18,9 @@
    </FileRef>
    <FileRef
       location = "group:lesson6.playground">
+   </FileRef>
+   <FileRef
+      location = "group:lesson10.playground">
    </FileRef>
    <FileRef
       location = "group:lesson11.playground">
@@ -45,6 +45,9 @@
    </FileRef>
    <FileRef
       location = "group:lesson18.playground">
+   </FileRef>
+   <FileRef
+      location = "group:lesson19.playground">
    </FileRef>
    <FileRef
       location = "group:Lesson25.playground">
