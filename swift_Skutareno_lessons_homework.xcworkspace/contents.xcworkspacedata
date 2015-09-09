@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:lesson10.playground">
+   </FileRef>
+   <FileRef
       location = "group:lesson1.playground">
    </FileRef>
    <FileRef

@@ -9,7 +9,7 @@ let MaxNameLength = 10
 class Human {
   var name: String {
     didSet {
-      if countElements(name) > MaxNameLength {
+      if count(name) > MaxNameLength {
         name = oldValue
       }
     }
@@ -62,7 +62,7 @@ Direction.enumDescription
 struct Cat {
   var name: String {
     didSet {
-      if countElements(name) > MaxNameLength {
+      if count(name) > MaxNameLength {
         name = oldValue
       }
     }

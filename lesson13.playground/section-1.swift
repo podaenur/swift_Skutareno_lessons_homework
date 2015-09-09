@@ -116,3 +116,35 @@ stClass1
 007. Уровень супермен
 Выполните задание шахмат из урока по энумам используя структуры либо классы
 */
+
+struct Student {
+  var firstName: String?
+  var lastName: String?
+  var yearOfBirtday: UInt16?
+  var score: Double? {
+    didSet {
+      if score > 5 {
+        println("Score cannot be bigger than 5.0 points")
+        score = oldValue
+      }
+    }
+  }
+}
+
+
+var Anna = Student(firstName: "Anna", lastName: "Romanova", yearOfBirtday: 1981, score: 4.1)
+var Leonid = Student(firstName: "Leonid", lastName: "Butusov", yearOfBirtday: 1969, score: 3.2)
+var Petr = Student(firstName: "Petr", lastName: "Rabinovich", yearOfBirtday: 1993, score: 5.0)
+var Lisa = Student(firstName: "Lisa", lastName: "Kaningem", yearOfBirtday: 1977, score: 5.8)
+
+Anna.firstName
+Leonid.lastName
+Petr.yearOfBirtday
+Lisa.score
+
+
+
+
+
+
+

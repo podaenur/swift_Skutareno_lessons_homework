@@ -2,7 +2,7 @@
 
 import UIKit
 
-// MARK: Lesson - Строки
+// MARK: Lesson - Строки (done)
 
 //var str = String()
 var str = "c"
@@ -96,7 +96,6 @@ let summ = (strA.toInt() ?? 0) + (strB.toInt() ?? 0) + (strC.toInt() ?? 0) + (st
 var element1: String
 if strA.toInt() != nil {
   element1 = strA
-  //  element1 = str.description
 } else {
   element1 = "nil"
 }

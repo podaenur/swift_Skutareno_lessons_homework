@@ -95,7 +95,7 @@ var response: (statusCode: Int, message: String?, errorMessage: String?)
 
 response = (401, nil, "deny")
 
-if (response.statusCode >= 200 && response.statusCode <= 300) {
+if (response.statusCode >= 200 && response.statusCode < 300) {
   println("Message: \(response.message!)")
 } else {
   println("Error: \(response.errorMessage!)")
@@ -128,7 +128,7 @@ newThird = ("Margarin", nil, nil)
 newFourth = ("Lui", "d3212er", 0.1)
 newFifth = ("Landish", nil, 4)
 
-var allInfo = [ newFirst, newSecond, newThird, newFourth, newFifth ]
+let allInfo = [ newFirst, newSecond, newThird, newFourth, newFifth ]
 
 for obj in allInfo {
   println("name: \(obj.name)")

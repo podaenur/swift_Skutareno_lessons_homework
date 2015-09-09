@@ -15,10 +15,10 @@ enum Action {
   case Stop
   case Turn(direction: Direction)
   
-//  enum Direction {
-//    case Left
-//    case Right
-//  }
+  //  enum Direction {
+  //    case Left
+  //    case Right
+  //  }
 }
 
 var action = Action.Run(meters: 20, speed: 15.0)
@@ -34,7 +34,7 @@ action = .Turn(direction: direction)
 
 switch action {
 case .Stop: println("Stop")
-//case .Walk(let meters): println("walk \(meters) meters")
+  //case .Walk(let meters): println("walk \(meters) meters")
 case .Walk(let meters) where meters < 100:
   println("short walk")
 case .Walk(let meters):
@@ -63,3 +63,23 @@ println(Direction.Left.rawValue)
 
 5. Следите чтобы ваш код был красивым!
 */
+
+//  мат: black king - А1  white queen H2  white Rook A8
+
+enum Chessman {
+  case King
+  case Queen
+  case Rook
+  case Knight
+  case Bishop
+  case Pawn
+  
+  enum Color {
+    case Black
+    case White
+  }
+}
+
+
+
+
