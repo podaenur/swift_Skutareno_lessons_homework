@@ -50,6 +50,9 @@
       location = "group:lesson19.playground">
    </FileRef>
    <FileRef
+      location = "group:lesson20.playground">
+   </FileRef>
+   <FileRef
       location = "group:Lesson25.playground">
    </FileRef>
 </Workspace>
